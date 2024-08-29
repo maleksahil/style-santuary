@@ -1,0 +1,813 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Style Sanctuary</title>
+
+    <!-- fontawsome CDN -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- bootstrap css -->
+
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+
+    <!--custom CSS-->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class="container ">
+            <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="index.html">
+                <i class="fa-solid fa-bag-shopping fa-2xl"></i>
+                <span class="text-uppercase fw-light ms-2">SS</span>
+            </a>
+
+            <div class="order-lg-2 nav-btns collapse" >
+                <button type="button" class="btn ">
+                    <i class="fa-solid fa-cart-shopping fa-lg "></i>
+                    <span class=" badge bg-primary ">5</span>
+                </button>
+
+                <button type="button" class="btn ">
+                    <i class="fa-solid fa-heart fa-lg"></i>
+                    <span class=" badge bg-primary ">2</span>
+                </button>
+
+                <button type="button" class="btn ">
+                    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                </button>
+            </div>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" >
+                <span class="navbar-toggler-icon "></span>
+            </button>
+
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-2 py-2 ">
+                        <a class="nav-link text-uppercase text-dark" href="#header">home</a>
+                    </li>
+                    <li class="nav-item px-2 py-2 ">
+                        <a class="nav-link text-uppercase text-dark" href="#collections">collections</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#specials">specials</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#blogs">blogs</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-uppercase text-dark" href="#about">about us</a>
+                    </li>
+                    <li class="nav-item px-2 py-2 border-0">
+                        <a class="nav-link text-uppercase text-dark" href="#popular">popular</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- header -->
+    <header id="header" class="vh-100 carousel slide" data-bs-ride="carousel" style="padding-top: 104px;">
+        <div class="container h-100 d-flex align-items-center carousel-inner">
+            <div class="text-center carousel-item active">
+                <h2 class="text-capitalize text-warning">best collection</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-warning">New Arrivals</h1>
+                <a href="#" class="btn mt-3 text-uppercase">Shop Now</a>
+            </div>
+            <div class="text-center carousel-item">
+                <h2 class="text-capitalize text-danger">best price & offer</h2>
+                <h1 class="text-uppercase py-2 fw-bold text-danger">New season</h1>
+                <a href="#" class="btn mt-3 text-uppercase">Buy Now</a>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#header" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#header" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </header>
+
+    <!-- end of header -->
+
+    <!-- collection -->
+
+    <section id="collection" class="py-5 border">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block">New Collection</h2>
+            </div>
+
+            <div class="row g-0">
+                <div class="d-flex flex-wrap justify-content-center mt-5 ">
+                    <button type="button" id="white" class=" btn m-2 text-dark active-filter-btn"> All</button>
+                    <button type="button" id="white" class=" btn m-2 text-dark"> Best sellers</button>
+                    <button type="button" id="white" class=" btn m-2 text-dark"> Featured</button>
+                    <button type="button" id="white" class=" btn m-2 text-dark"> New Arrivals</button>
+                </div>
+
+                <div class="collection-list mt-4 row gx-0 gy-3">
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 m-3 card1">
+                        <div class="collection-img  front" id="radius">
+                            <img src="images/c_formal_gray_shirt.png" alt="aa" class="w-100" height="100%">
+                            <span
+                                class="position-relative bg-primary d-flex justify-content-center align-items-center text-white">Sale</span>
+                        </div>
+                        <div class="text-center  back" id="radius">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">gray shirt</p>
+                            <span class="">$45.50</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 m-3 card1">
+                        <div class="collection-img front" id="radius">
+                            <img src="images/c_pant_girl.png" alt="aa" class="w-100" height="100%">
+                            <span
+                                class="position-relative bg-primary d-flex justify-content-center align-items-center text-white">Sale</span>
+                        </div>
+                        <div class="text-center back" id="radius">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">gray shirt</p>
+                            <span class="">$45.50</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 m-3 card1">
+                        <div class="collection-img front" id="radius">
+                            <img src="images/c_polo-shirt.png" alt="aa" class="w-100">
+                            <span
+                                class="position-relative bg-primary d-flex justify-content-center align-items-center text-white">Sale</span>
+                        </div>
+                        <div class="text-center back" id="radius">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">gray shirt</p>
+                            <span class="">$45.50</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2 m-3 card1">
+                        <div class="collection-img front" id="radius">
+                            <img src="images/c_shirt-girl.png" id="radius" alt="aa" class="w-100">
+                            <span
+                                class="position-relative bg-primary d-flex justify-content-center align-items-center text-white">Sale</span>
+                        </div>
+                        <div class="text-center back" id="radius">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">gray shirt</p>
+                            <span class="">$45.50</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2  m-3 card1">
+                        <div class="collection-img front" id="radius">
+                            <img src="images/c_t-shirt_men.png" alt="aa" class="w-100">
+                            <span
+                                class="position-relative bg-primary d-flex justify-content-center align-items-center text-white">Sale</span>
+                        </div>
+                        <div class="text-center back" id="radius">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">gray shirt</p>
+                            <span class="">$45.50</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2  m-3 card1">
+                        <div class="collection-img front" id="radius">
+                            <img src="images/c_tunic-shirt_girl.png" alt="aa" class="w-100">
+                            <span
+                                class="position-relative bg-primary d-flex justify-content-center align-items-center text-white">Sale</span>
+                        </div>
+                        <div class="text-center back" id="radius">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">gray shirt</p>
+                            <span class="">$45.50</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2  m-3 card1">
+                        <div class="collection-img front" id="radius">
+                            <img src="images/c_undershirt.png" alt="aa" class="w-100">
+                            <span
+                                class="position-relative bg-primary d-flex justify-content-center align-items-center text-white">Sale</span>
+                        </div>
+                        <div class="text-center back" id="radius">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">gray shirt</p>
+                            <span class="">$45.50</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-3 p-2  m-3 card1">
+                        <div class="collection-img front" id="radius">
+                            <img src="images/c_western-shirt.png" alt="aa" class="w-100">
+                            <span
+                                class="position-relative bg-primary d-flex justify-content-center align-items-center text-white">Sale</span>
+                        </div>
+                        <div class="text-center back" id="radius">
+                            <div class="rating mt-3">
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                                <span class="text-primary"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">gray shirt</p>
+                            <span class="">$45.50</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end of collection -->
+
+    <!-- hero -->
+
+    <div class="title text-center py-5">
+        <h2 class="position-relative d-inline-block">Catagories</h2>
+    </div>
+
+
+    <div class="container-fluid" >
+        <div class="row">
+            <div class="hero col-12" >
+                <div class="row">
+                    <div class="col-12 col-md-6" style=" aspect-ratio: 1.5/1; ">
+                        <img src="./images/women_store.jpg" alt="aa" height="100%" width="100%">
+                    </div>
+                    <div class="col-12 col-md-6" style=" aspect-ratio: 1.5/1; ">
+                        <div class="row">
+                            <div class="col-12 mt-3" style=" aspect-ratio: 3/1 ">
+                                <img src="./images/woman_accesories.jpg" alt="aa" height="100%" width="100%">
+                            </div>
+                            <div class="col-12" style="margin: 0px; aspect-ratio: 3/1 ">
+                                <div class="row">
+                                    <div class="col-6"
+                                        style="margin-top: 20px; aspect-ratio: 1.5/1">
+                                        <img src="./images/summer_sales.jpg" alt="aa" height="100%" width="100%">
+                                    </div>
+                                    <div class="col-6"
+                                        style="margin-top: 20px; aspect-ratio: 1.5/1">
+                                        <img src="./images/trendy_looks.jpg" alt="aa" height="100%" width="100%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- end of hero -->
+
+
+    <!-- special products -->
+    <section id="special" class="py-5">
+        <div class="container">
+            <div class="title text-center py-5">
+                <h2 class="position-relative d-inline-block">Special Section</h2>
+            </div>
+
+            <div class="special-list row g-0">
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative over">
+                        <img src="images/special_product_1.jpg" alt="aa" class="w-100">
+                        <span class="position-absolute d-flex align-items-center text-primary fs-4"><i
+                                class="fa-solid fa-heart"></i></span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">gray shirt</p>
+                        <span class="fw-bold d-block">$ 45.00</span>
+                        <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative over">
+                        <img src="images/special_product_2.jpg" alt="aa" class="w-100">
+                        <span class="position-absolute d-flex align-items-center text-primary fs-4"><i
+                                class="fa-solid fa-heart"></i></span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">gray shirt</p>
+                        <span class="fw-bold d-block">$ 45.00</span>
+                        <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative over">
+                        <img src="images/special_product_3.jpg" alt="aa" class="w-100">
+                        <span class="position-absolute d-flex align-items-center text-primary fs-4"><i
+                                class="fa-solid fa-heart"></i></span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">gray shirt</p>
+                        <span class="fw-bold d-block">$ 45.00</span>
+                        <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+                    <div class="special-img position-relative over">
+                        <img src="images/special_product_4.jpg" alt="aa" class="w-100">
+                        <span class="position-absolute d-flex align-items-center text-primary fs-4"><i
+                                class="fa-solid fa-heart"></i></span>
+                    </div>
+                    <div class="text-center">
+                        <p class="text-capitalize mt-3 mb-1">gray shirt</p>
+                        <span class="fw-bold d-block">$ 45.00</span>
+                        <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- end of special products -->
+
+    <!-- blogs -->
+
+    <section id="offers" class="py-5" style="aspect-ratio: 2/1;">
+        <div class="container">
+            <div class="row d-flex align-items-center  justify-content-lg-start">
+                <div class="offers-content">
+                    <span class="text-white mx-2">Discount up to 40%</span>
+                    <h2 class="mt-2 mb-4 text-white">Grand Sale Offer</h2>
+                    <a href="#" class="btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end of blogs -->
+
+    <!-- card slider -->
+
+    <div class="title text-center py-5">
+        <h2 class="position-relative d-inline-block">New Arrivals</h2>
+    </div>
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active  ">
+                <div class="cards d-flex justify-content-between" style="margin-left: 15%;">
+                    <div class="card" id="card1" style="width: 18rem;">
+
+                    </div>
+                    <div class="card" id="card2" style="width: 18rem;">
+
+                    </div>
+                    <div class="card" id="card3" style="width: 18rem;">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item  ">
+                <div class="cards d-flex justify-content-between" style="margin-left: 15%;">
+                    <div class="card" id="card4" style="width: 18rem;">
+
+                    </div>
+                    <div class="card" id="card5" style="width: 18rem;">
+
+                    </div>
+                    <div class="card" id="card6" style="width: 18rem;">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item  ">
+                <div class="cards d-flex justify-content-between" style="margin-left: 15%;">
+                    <div class="card" id="card7" style="width: 18rem;">
+
+                    </div>
+                    <div class="card" id="card8" style="width: 18rem;">
+
+                    </div>
+                    <div class="card" id="card9" style="width: 18rem;">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" id="slider_button" style="margin-left: 50px;" type="button"
+            data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" id="slider_button" style="margin-right: 50px;" type="button"
+            data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- end of card slider -->
+
+    <!-- blogs -->
+
+    <section id="blogs" class="py-5" >
+        <div class="container" >
+            <div class="title text-center py-5" >
+                <h2 class="position-relative d-inline-block">Our latest Blog</h2>
+            </div>
+
+            <div class="row g-3" >
+
+                <div class=" col-lg-4 col-md-6 col-sm-12 d-flex flex-column" style="padding:50px; ">
+                    <img src="./images/Web-Blog-(14)83.png" alt="aa" width="100%" style="border-radius: 50px;">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">Fashion with the Seasons: Spice Up Your Style</h4>
+                    </div>
+                    <div>
+                        <p class="card-text mt-3 text-muted">Hey Rajkumari readers! The world of fashion is
+                            ever-changing, and staying on top of seasonal fashion trends can be fun! But with each
+                            season comes a whole new look. Don't worry, we've got you covered. Here's a quick guide to
+                            keep your wardrobe fresh and fabulous all year round:</p>
+                    </div>
+                    <p class="card-text">
+                        <small class="text-muted">
+                            <span class="fw-bold">Author: </span>Jhon Doe
+                        </small>
+                    </p>
+                    <a href="#" class="btn">Read More</a>
+
+                </div>
+
+
+                <div class=" col-lg-4 col-md-6 col-sm-12 d-flex flex-column" style="padding:50px; ">
+                    <img src="./images/Web-Blog-(13)82.png" alt="aa" width="100%" style="border-radius: 50px;">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">The Art of Accessorizing: Elevate Your Outfit with Ease</h4>
+                    </div>
+                    <div>
+                        <p class="card-text mt-3 text-muted">In the realm of fashion, it's often the smallest details
+                            that make the biggest impact. Accessorizing is an art that can transform an ordinary outfit
+                            into a stunning ensemble. Inspired by the timeless elegance of a princess, let’s explore how
+                            embracing the "Rajkumari" style can add a </p>
+                    </div>
+                    <p class="card-text">
+                        <small class="text-muted">
+                            <span class="fw-bold">Author: </span>Jhon Doe
+                        </small>
+                    </p>
+                    <a href="#" class="btn">Read More</a>
+
+                </div>
+
+
+                <div class=" col-lg-4 col-md-6 col-sm-12 d-flex flex-column" style="padding:50px; ">
+                    <img src="./images/Web-Blog-(6)75.png" alt="aa" width="100%" style="border-radius: 50px;">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">Inspiring Haldi Function Outfit Ideas</h4>
+                    </div>
+                    <div>
+                        <p class="card-text mt-3 text-muted">The Haldi ceremony is a vibrant and joyous pre-wedding
+                            ritual, filled with laughter, camaraderie, and of course, the ceremonial application of
+                            turmeric paste. As you prepare to celebrate this auspicious occasion, choosing the perfect
+                            outfit is a crucial element of your festivities regal touch to your wardrobe  </p>
+                    </div>
+                    <p class="card-text">
+                        <small class="text-muted">
+                            <span class="fw-bold">Author: </span>Jhon Doe
+                        </small>
+                    </p>
+                    <a href="#" class="btn">Read More</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end of blogs -->
+
+    <!-- about us -->
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row gy-lg-5 align-items-center">
+                <div class="col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class="title pt-3 pb-5">
+                        <h2 class="position-relative d-inline-block ms-4">About Us</h2>
+                        <p class="lead text-muted">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+                            soluta amet alias
+                        </p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, voluptatem illo itaque
+                            libero expedita impedit. Incidunt totam dignissimos architecto numquam in sint sapiente,
+                            expedita magnam autem dolore et officiis? Sed.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-0">
+                    <img src="images/about_us.jpg" alt="aa" id="aboutImg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end of about us -->
+
+    <!-- popular -->
+
+    <section id="popular" class="py-5">
+        <div class="container">
+            <div class="title text-center pt-3 pb-5">
+                <h2 class="position-relative d-inline-block ms-4">popular of This Year</h2>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6 col-lg-4 row g-3 ">
+                    <h3 class="fs-5">Top rated</h3>
+
+
+                    <div class="d-flex align-items-start justify-content-start ">
+                        <img src="images/top_rated_1.jpg" alt="aa" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0 ">Blue Shirt</p>
+                            <span>$ 20.00</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/top_rated_2.jpg" alt="aa" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Blue Shirt</p>
+                            <span>$ 20.00</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/top_rated_3.jpg" alt="aa" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Blue Shirt</p>
+                            <span>$ 20.00</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5">Best selling</h3>
+
+
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/best_selling_1.jpg" alt="aa" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Blue Shirt</p>
+                            <span>$ 20.00</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/best_selling_2.jpg" alt="aa" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Blue Shirt</p>
+                            <span>$ 20.00</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/best_selling_3.jpg" alt="aa" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Blue Shirt</p>
+                            <span>$ 20.00</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-4 row g-3">
+                    <h3 class="fs-5">on sale</h3>
+
+
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/on_sale_1.jpg" alt="aa" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Blue Shirt</p>
+                            <span>$ 20.00</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/on_sale_2.jpg" alt="aa" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Blue Shirt</p>
+                            <span>$ 20.00</span>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-start justify-content-start">
+                        <img src="images/on_sale_3.jpg" alt="aa" class="img-fluid pe-3 w-25">
+                        <div>
+                            <p class="mb-0">Blue Shirt</p>
+                            <span>$ 20.00</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end of popular -->
+
+    <!-- newsletter -->
+
+    <section id="newsletter" class="py-5">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <div class="title text-center pt-3 pb-5">
+                    <h2 class="position-relative d-inline-block ms-4">Newsletter Subscription</h2>
+                </div>
+
+                <p class="text-center text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                    excepturi eum nulla repellat unde magni blanditiis cupiditate recusandae fugiat doloribus,
+                    laboriosam doloremque voluptatum deleniti eaque repellendus quae. Explicabo, hic! Accusantium?</p>
+                <div class="input-group mb-3 mt-3">
+                    <input type="text" class="form-control" placeholder="Enter Your Email ...">
+                    <button class="btn btn-primary" type="submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end of newsletter -->
+
+    <!-- footer -->
+
+    <!-- end of footer -->
+    <footer class="bg-dark py-5">
+        <div class="container">
+            <div class="row text-white g-4">
+                <div class="col-md-6 col-lg-3">
+                    <a href="index.html">Attire</a>
+                    <p class="text-white  mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio
+                        quibusdam vitae est deserunt atque ut sit similique corporis, ex vero molestias nesciunt sunt
+                        adipisci ratione reiciendis! Qui deserunt officiis in.</p>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light">Links</h5>
+                    <ul class=" ">
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none ">
+                                <i class="fas fa-chevron-right me-1"></i>Home
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none ">
+                                <i class="fas fa-chevron-right me-1"></i>Collection
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none ">
+                                <i class="fas fa-chevron-right me-1"></i>Blogs
+                            </a>
+                        </li>
+                        <li class="my-3">
+                            <a href="#" class="text-white text-decoration-none ">
+                                <i class="fas fa-chevron-right me-1"></i>About Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Contact Us</h5>
+                    <div class="d-flex justify-content-start align-items-start my-2 ">
+                        <span class="me-3">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            Lorem ipsum dolor sit amet
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 ">
+                        <span class="me-3">
+                            <i class="fas fa-envelop"></i>
+                        </span>
+                        <span class="fw-light">
+                            StyleSanctuary.support@gmail.com
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-start align-items-start my-2 ">
+                        <span class="me-3">
+                            <i class="fas fa-phone-alt"></i>
+                        </span>
+                        <span class="fw-light">
+                            +9786 6776 236
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="fw-light mb-3">Follow Us</h5>
+                    <div>
+                        <ul class="list-unstyled d-flex">
+                            <li>
+                                <a href="#" class="text-white text-decoration-none  fs-4 me-4">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none  fs-4 me-4">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none  fs-4 me-4">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-white text-decoration-none  fs-4 me-4">
+                                    <i class="fa-brands fa-pinterest"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- j-Query -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+    <!-- bootstrap JS -->
+
+    <script src="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
