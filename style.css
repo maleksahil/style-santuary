@@ -96,6 +96,9 @@ i:hover{
 
 #header{
     background: url(images/banner-img-1.jpg) top/cover no-repeat;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .carousel-inner h1{
@@ -125,6 +128,12 @@ i:hover{
 }
 
 /* collection */
+
+#collection{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
 
 .active-filter-btn{
     background-color: var(--pink)!important;
@@ -219,6 +228,11 @@ i:hover{
     width: 100%;
 }
 
+#catagory{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
 
 .hero{
     aspect-ratio: 3/1;
@@ -237,6 +251,12 @@ i:hover{
 
 
 /* special  */
+
+#special{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
 
 .special-img span{
     top: 20px;
@@ -274,6 +294,10 @@ i:hover{
 
 #offers{
     background: url(images/offer_img.jpg) center/cover no-repeat;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    
 }
 
 #offers.row{
@@ -444,17 +468,31 @@ i:hover{
 
 
 
-
+#blogs{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
 
 /* about */
 
 #about{
     background-color: rgba(179,179,179,0.05);
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
-
+#popular{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
 /* newsletter */
 #newsletter{
     background-color: rgba(179,179,179,0.05);
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 #newsletter{
@@ -482,6 +520,8 @@ i:hover{
 }
 
 /* footer */
+
+
 
 footer .brand{
     font-family: var(--lg-font);
@@ -534,5 +574,39 @@ footer a:hover{
 
     #card8{
         display: none;
+    }
+}
+
+.top{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: wheat;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    display: grid;
+    place-items: center;
+    
+}
+
+.top a i{
+    color: #e534d6;
+    font-size: 1.5rem;
+}
+
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+        /* transform: translateX(-1000px); */
+        /* clip-path: inset(100% 100% 0 0); */
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+        /* transform: translateX(0px); */
+        /* clip-path: inset(0 0 0 0); */
     }
 }
